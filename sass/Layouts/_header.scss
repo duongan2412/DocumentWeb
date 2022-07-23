@@ -1,0 +1,5 @@
+.header__content {
+    .nav {
+        @include styleText($fs-2, $fw-4, $color-black-1)
+    }
+}
