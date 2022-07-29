@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Tài liệu phần mềm Quản lý Khách sạn</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -36,19 +36,23 @@
             <ul class="list-unstyled components">
                 <p><a href="#">About</a></p>
                 <li class="active">
-                    <a href="#pageMenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    <a href="#pageMenu1" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">S01-Login</a>
                     <ul class="nav nav-tabs collapse list-unstyled" id="pageMenu1">
                         <li>
-                            <a data-toggle="tab" href="#home">Home 1</a>
+                            <a data-toggle="tab" href="#loginhome">Home</a>
                         </li>
                         <li>
-                            <a data-toggle="tab" href="#menu1">Home 2</a>
+                            <a data-toggle="tab" href="#logindiagram">Activity Diagram</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#loginmockup">Mockup</a>
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a href="#pageMenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Activity
-                        Diagram</a>
+                <!--  <li>
+                    <a href="#pageMenu2" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">Dashboard</a>
                     <ul class="nav nav-tabs collapse list-unstyled" id="pageMenu2">
                         <li>
                             <a href="#DiagramSub1" data-toggle="collapse" aria-expanded="false"
@@ -66,19 +70,60 @@
                             <a href="#">Activity Diagram 3</a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
                 <li>
-                    <a href="#pageMenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Mockup</a>
+                    <a href="#pageMenu3" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">S02-Dashboard</a>
                     <ul class="nav nav-tabs collapse list-unstyled" id="pageMenu3">
                         <li>
-                            <a href="#">Mockup 1</a>
+                            <a href="#dashboard" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle">S02.1-Dashboard</a>
+                            <ul class="nav nav-tabs collapse list-unstyled" id="dashboard">
+                                <li>
+                                    <a data-toggle="tab" href="#dashboardhome">Home</a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#dashboarddiagram">Activity Diagram</a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#dashboardmockup">Mockup</a>
+                                </li>
+                                <!-- <li>
+                                <a href="#">Mockup 3</a>
+                            </li> -->
+                            </ul>
                         </li>
                         <li>
-                            <a href="#">Mockup 2</a>
+                            <a data-toggle="tab" href="#dashboarddiagram">S02.2- Notification</a>
                         </li>
                         <li>
+                            <a data-toggle="tab" href="#dashboardmockup">S02.3- Message</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#dashboardmockup">S02.3- Search</a>
+                        </li>
+                        <!-- <li>
                             <a href="#">Mockup 3</a>
+                        </li> -->
+                    </ul>
+
+
+
+
+                </li>
+                <li>
+                    <a href="#pageMenu4" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">S03-Phòng</a>
+                    <ul class="nav nav-tabs collapse list-unstyled" id="pageMenu4">
+                        <li>
+                            <a href="#">Activity Diagram</a>
                         </li>
+                        <li>
+                            <a href="#">Mockup</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#">Mockup 3</a>
+                        </li> -->
                     </ul>
                 </li>
                 <li>
@@ -108,26 +153,128 @@
             </nav>
 
             <div class="tab-content">
-                <div id="home" class="tab-pane fade in active">
+                <!-- Noi dung trang Login -->
+                <div id="loginhome" class="tab-pane fade in active">
                     <h3>HOME</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
+                    <p>Màn hình đăng nhập để user điền thông tin đăng nhập (Username và Password) để truy cập vào hệ
+                        thống.</p>
                 </div>
-                <div id="menu1" class="tab-pane fade">
-                    <h3>Menu 1</h3>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</p>
+                <div id="logindiagram" class="tab-pane fade">
+                    <h3>Activity Diagram</h3>
+                    <p><img src="./Images/diagram/login.png" class="img-fluid" alt="Responsive image"></p>
                 </div>
-                <div id="menu2" class="tab-pane fade">
-                    <h3>Menu 2</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                        totam rem aperiam.</p>
+                <div id="loginmockup" class="tab-pane fade">
+                    <h3>Mockup</h3>
+                    <p><img src="./Images/mockup/s01.png" class="img-fluid" alt="Responsive image"></p>
+                    <table class="table">
+                        <caption>Mô tả màn hình đăng nhập</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Component</th>
+                                <th scope="col">Comp. Type</th>
+                                <th scope="col">Mandatory</th>
+                                <th scope="col">Default Value</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">PD
+                                    DB.Table.Column
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Đăng nhập hệ thống</td>
+                                <td>Breadscrumbs</td>
+                                <td>YES</td>
+                                <td>N/A</td>
+                                <td>Đăng nhập vào hệ thống thông qua tài khoản được quản trị cấp</td>
+                                <td>
+                                    <ul>
+                                        <li>Database: N/A</li>
+                                        <li>Table: N/A</li>
+                                        <li>Column: N/A</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Username</td>
+                                <td>Text field</td>
+                                <td>YES</td>
+                                <td>N/A</td>
+                                <td>Điền username được cấp</td>
+                                <td>
+                                    <ul>
+                                        <li>Database: N/A</li>
+                                        <li>Table: N/A</li>
+                                        <li>Column: N/A</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Password</td>
+                                <td>Text field</td>
+                                <td>YES</td>
+                                <td>N/A</td>
+                                <td>Điền password được cấp, password được mã hoá</td>
+                                <td>
+                                    <ul>
+                                        <li>Database: N/A</li>
+                                        <li>Table: N/A</li>
+                                        <li>Column: N/A</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Nút đăng nhập</td>
+                                <td>Button</td>
+                                <td>YES</td>
+                                <td>Đăng nhập</td>
+                                <td>
+                                    <ul>
+                                        <li>Truyền thông tin đăng nhập vào hệ thống để kiểm tra</li>
+                                        <li>Nếu dữ liệu tồn tại trong hệ thống, chuyển sang màn hình Dashboard theo role
+                                            của user</li>
+                                        <li>Nếu dữ liệu sai hiển thị thông báo dạng text màu đỏ nội dung "Sai thông tin
+                                            username/password "</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Database: N/A</li>
+                                        <li>Table: N/A</li>
+                                        <li>Column: N/A</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div id="menu3" class="tab-pane fade">
+
+                <!-- Noi dung trang dashboard -->
+                <div id="dashboardhome" class="tab-pane fade in active">
+                    <h3>HOME</h3>
+                    <p>Màn hình Dashboard hiển thị nội dung tổng quan trên hotel/apartment hiện tại gồm Doanh Thu và
+                        Công suất phòng</p>
+                </div>
+                <div id="dashboarddiagram" class="tab-pane fade in active">
+                    <h3>Activity Diagram</h3>
+                    <p>
+                    <p><img src="./Images/diagram/dashboard.png" class="img-fluid" alt="Responsive image"></p>.
+                    </p>
+                </div>
+                <div id="dashboardmockup" class="tab-pane fade in active">
+                    <h3>Mockup</h3>
+                    <p>Màn hình Dashboard.</p>
+                </div>
+                <!--  <div id="menu3" class="tab-pane fade">
                     <h3>Menu 3</h3>
                     <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
                         explicabo.</p>
-                </div>
+                </div> -->
             </div>
 
         </div>
