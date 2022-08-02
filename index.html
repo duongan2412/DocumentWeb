@@ -312,25 +312,208 @@
                     <h3>Mockup</h3>
                     <p>Màn hình Dashboard.</p>
                 </div>
-                <!--  <div id="menu3" class="tab-pane fade">
-                    <h3>Menu 3</h3>
-                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                        explicabo.</p>
-                </div> -->
+
                 <!-- Noi dung trang Hotel/Apartment -->
                 <div id="hahome" class="tab-pane fade in">
                     <h3>HOME</h3>
-                    <p>màn hotel</p>
+                    <p>Cài đặt thông tin cơ bản cho hotel/apartment</p>
                 </div>
                 <div id="hadiagram" class="tab-pane fade in">
                     <h3>Activity Diagram</h3>
                     <p>
-                    <p><img src="./Images/diagram/dashboard.png" class="img-fluid" alt="Responsive image"></p>.
+                    <p><img src="./Images/diagram/Hotel:Apartment.png" class="img-fluid" alt="Responsive image"></p>.
                     </p>
                 </div>
                 <div id="hamockup" class="tab-pane fade in">
                     <h3>Mockup</h3>
-                    <p>Màn hình Dashboard.</p>
+                    <p><img src="./Images/mockup/s07.png" class="img-fluid" alt="Responsive image"></p>
+                    <table class="table">
+                        <caption>Mô tả màn hình cấu hình Hotel/Apartment</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Component</th>
+                                <th scope="col">Comp. Type</th>
+                                <th scope="col">Mandatory</th>
+                                <th scope="col">Default Value</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">PD
+                                    DB.Table.Column
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Cấu hình Hotel/Apartment</td>
+                                <td>Breadscrumbs</td>
+                                <td>YES</td>
+                                <td>N/A</td>
+                                <td>Truy vấn, sửa đổi, xoá thông tin các Hotel/Apartment đã có và thêm mới</td>
+                                <td>
+                                    <ul>
+                                        <li>Database: N/A</li>
+                                        <li>Table: N/A</li>
+                                        <li>Column: N/A</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Danh sách các Hotel/Apartment</td>
+                                <td>Menu Tree</td>
+                                <td>YES</td>
+                                <td>N/A</td>
+                                <td>Hiển thị thông tin các Hotel/Apartment đã cài đặt. Khi bấm chọn sẽ fill màu
+                                    <p class="mauxanh">(#80FFFF)</p>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Database: N/A</li>
+                                        <li>Table: N/A</li>
+                                        <li>Column: N/A</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Mã</td>
+                                <td>Label</td>
+                                <td>YES</td>
+                                <td>N/A</td>
+                                <td>Dạng int, tự phát sinh, read only</td>
+                                <td>
+                                    <ul>
+                                        <li>Database: N/A</li>
+                                        <li>Table: N/A</li>
+                                        <li>Column: N/A</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Tên</td>
+                                <td>Text field</td>
+                                <td>YES</td>
+                                <td>N/A</td>
+                                <td>
+                                    Nhập/Hiển thị tên dạng String
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Database: N/A</li>
+                                        <li>Table: N/A</li>
+                                        <li>Column: N/A</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Web</td>
+                                <td>Text field</td>
+                                <td>YES</td>
+                                <td>N/A</td>
+                                <td>Nhập/Hiển thị địa chỉ website dạng String</td>
+                                <td>
+                                    <ul>
+                                        <li>Database: N/A</li>
+                                        <li>Table: N/A</li>
+                                        <li>Column: N/A</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Email</td>
+                                <td>Text field</td>
+                                <td>YES</td>
+                                <td>N/A</td>
+                                <td>Nhập/Hiển thị địa chỉ website dạng string, có kiểm tra định dạng email</td>
+                                <td>
+                                    <ul>
+                                        <li>Database: N/A</li>
+                                        <li>Table: N/A</li>
+                                        <li>Column: N/A</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td>Phone</td>
+                                <td>Text field</td>
+                                <td>YES</td>
+                                <td>N/A</td>
+                                <td>Nhập/Hiển thị số Phone dạng string, có kiểm tra định dạng Phone</td>
+                                <td>
+                                    <ul>
+                                        <li>Database: N/A</li>
+                                        <li>Table: N/A</li>
+                                        <li>Column: N/A</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">8</th>
+                                <td>Fax</td>
+                                <td>Text field</td>
+                                <td>YES</td>
+                                <td>N/A</td>
+                                <td>Nhập/Hiển thị số FAX dạng string</td>
+                                <td>
+                                    <ul>
+                                        <li>Database: N/A</li>
+                                        <li>Table: N/A</li>
+                                        <li>Column: N/A</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
+                                <td>Mã số thuế</td>
+                                <td>Text field</td>
+                                <td>YES</td>
+                                <td>N/A</td>
+                                <td>Nhập/Hiển thị mã số thuế dạng string</td>
+                                <td>
+                                    <ul>
+                                        <li>Database: N/A</li>
+                                        <li>Table: N/A</li>
+                                        <li>Column: N/A</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">10</th>
+                                <td>Địa chỉ</td>
+                                <td>Text field</td>
+                                <td>YES</td>
+                                <td>N/A</td>
+                                <td>Nhập/Hiển thị địa chỉ dạng string</td>
+                                <td>
+                                    <ul>
+                                        <li>Database: N/A</li>
+                                        <li>Table: N/A</li>
+                                        <li>Column: N/A</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">11</th>
+                                <td>Loại hình</td>
+                                <td>Dropdownlist</td>
+                                <td>YES</td>
+                                <td>Hotel, Apartment</td>
+                                <td>Chọn loại hình với 2 giá tri mặc định là Hotel, Apartment</td>
+                                <td>
+                                    <ul>
+                                        <li>Database: N/A</li>
+                                        <li>Table: N/A</li>
+                                        <li>Column: N/A</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
 
